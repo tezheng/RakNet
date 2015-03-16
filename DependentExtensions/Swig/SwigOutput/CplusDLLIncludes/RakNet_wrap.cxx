@@ -116,7 +116,9 @@ template <typename T> T SwigValueInit() {
 #     define SWIGEXPORT __declspec(dllexport)
 #   endif
 # else
-#   if defined(__GNUC__) && defined(GCC_HASCLASSVISIBILITY)
+#   if defined(__ANDROID__)
+#     define SWIGEXPORT extern "C"
+#   elif defined(__GNUC__) && defined(GCC_HASCLASSVISIBILITY)
 #     define SWIGEXPORT __attribute__ ((visibility("default")))
 #   else
 #     define SWIGEXPORT
@@ -130,7 +132,7 @@ template <typename T> T SwigValueInit() {
 #   define SWIGSTDCALL __stdcall
 # else
 #   define SWIGSTDCALL
-# endif 
+# endif
 #endif
 
 /* Deal with Microsoft's attempt at deprecating C standard runtime functions */
