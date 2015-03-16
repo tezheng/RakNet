@@ -121,6 +121,8 @@ public:
 	// Constructor
 	ReliabilityLayer();
 
+	ReliabilityLayer(const ReliabilityLayer&);
+
 	// Destructor
 	~ReliabilityLayer();
 

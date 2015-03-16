@@ -332,6 +332,11 @@ ReliabilityLayer::ReliabilityLayer()
 	refCountedDataPool.SetPageSize(sizeof(InternalPacketRefCountedData)*32);
 }
 
+ReliabilityLayer::ReliabilityLayer(const ReliabilityLayer& layer)
+{
+	*this = layer;
+}
+
 //-------------------------------------------------------------------------------------------------------
 // Destructor
 //-------------------------------------------------------------------------------------------------------

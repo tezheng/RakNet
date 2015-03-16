@@ -387,6 +387,13 @@ bool RakWString::Deserialize(wchar_t *str, BitStream *bs)
 	return true;
 }
 
+const RakNet::RakWString operator+(const RakNet::RakWString &lhs, const RakNet::RakWString &rhs)
+{
+	RakNet::RakWString ret(lhs);
+	ret += rhs;
+	return ret;
+}
+
 /*
 RakNet::BitStream bsTest;
 RakNet::RakWString testString("cat"), testString2;
