@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFAA44391AB6A7E800E20804 /* Reknet.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA44381AB6A7E800E20804 /* Reknet.dylib */; };
+		AFAA443A1AB6A7EC00E20804 /* Reknet.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFAA44381AB6A7E800E20804 /* Reknet.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AFD9C7971AB6D09000C061BC /* bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = AFAA44331AB69B8200E20804 /* bundle.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFAA44311AB69A6100E20804 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				AFAA443A1AB6A7EC00E20804 /* Reknet.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFAA44231AB698BD00E20804 /* Reknet.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reknet.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAA44271AB698BD00E20804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFAA44331AB69B8200E20804 /* bundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bundle.c; sourceTree = "<group>"; };
+		AFAA44381AB6A7E800E20804 /* Reknet.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Reknet.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFAA44201AB698BD00E20804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAA44391AB6A7E800E20804 /* Reknet.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFAA441A1AB698BD00E20804 = {
+			isa = PBXGroup;
+			children = (
+				AFAA44381AB6A7E800E20804 /* Reknet.dylib */,
+				AFAA44331AB69B8200E20804 /* bundle.c */,
+				AFAA44251AB698BD00E20804 /* ReknetBundle */,
+				AFAA44241AB698BD00E20804 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFAA44241AB698BD00E20804 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA44231AB698BD00E20804 /* Reknet.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFAA44251AB698BD00E20804 /* ReknetBundle */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA44261AB698BD00E20804 /* Supporting Files */,
+			);
+			path = ReknetBundle;
+			sourceTree = "<group>";
+		};
+		AFAA44261AB698BD00E20804 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFAA44271AB698BD00E20804 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFAA44221AB698BD00E20804 /* Reknet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAA442A1AB698BD00E20804 /* Build configuration list for PBXNativeTarget "Reknet" */;
+			buildPhases = (
+				AFAA44361AB6A10B00E20804 /* ShellScript */,
+				AFAA441F1AB698BD00E20804 /* Sources */,
+				AFAA44201AB698BD00E20804 /* Frameworks */,
+				AFAA44211AB698BD00E20804 /* Resources */,
+				AFAA44311AB69A6100E20804 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reknet;
+			productName = ReknetBundle;
+			productReference = AFAA44231AB698BD00E20804 /* Reknet.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFAA441B1AB698BD00E20804 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Zheng Te";
+				TargetAttributes = {
+					AFAA44221AB698BD00E20804 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = AFAA441E1AB698BD00E20804 /* Build configuration list for PBXProject "ReknetBundle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFAA441A1AB698BD00E20804;
+			productRefGroup = AFAA44241AB698BD00E20804 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFAA44221AB698BD00E20804 /* Reknet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFAA44211AB698BD00E20804 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFAA44361AB6A10B00E20804 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -id @loader_path/Reknet.dylib Reknet.dylib\necho OTOOL BEGIN\notool -L Reknet.dylib\necho OTOOL END";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFAA441F1AB698BD00E20804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD9C7971AB6D09000C061BC /* bundle.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AFAA44281AB698BD00E20804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AFAA44291AB698BD00E20804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AFAA442B1AB698BD00E20804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				INFOPLIST_FILE = ReknetBundle/Info.plist;
+				INSTALL_PATH = "$(PROJECT_DIR)/Output";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AFAA442C1AB698BD00E20804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				INFOPLIST_FILE = ReknetBundle/Info.plist;
+				INSTALL_PATH = "$(PROJECT_DIR)/Output";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFAA441E1AB698BD00E20804 /* Build configuration list for PBXProject "ReknetBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAA44281AB698BD00E20804 /* Debug */,
+				AFAA44291AB698BD00E20804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAA442A1AB698BD00E20804 /* Build configuration list for PBXNativeTarget "Reknet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAA442B1AB698BD00E20804 /* Debug */,
+				AFAA442C1AB698BD00E20804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFAA441B1AB698BD00E20804 /* Project object */;
+}
