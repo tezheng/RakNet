@@ -6466,8 +6466,11 @@ void RakPeer::FillIPList(void)
 		return;
 
 	// Fill out ipList structure
-#if  !defined(WINDOWS_STORE_RT)
+#if !defined(WINDOWS_STORE_RT)
+/// zhengt: disable this since GetMyIP is not properly implemented for iOS
+#if !defined(TARGET_OS_IPHONE) && !defined(TARGET_IPHONE_SIMULATOR)
 	RakNetSocket2::GetMyIP( ipList );
+#endif // !defined(TARGET_OS_IPHONE) && !defined(TARGET_IPHONE_SIMULATOR)
 #endif
 
 	// Sort the addresses from lowest to highest
