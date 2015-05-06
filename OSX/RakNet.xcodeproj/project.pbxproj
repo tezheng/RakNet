@@ -129,7 +129,8 @@
 		A74899FF6EA74892B93345EE /* TeamBalancer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D205D1925684441AC44BC2E /* TeamBalancer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		A84ED3AC53394998B0E95D3B /* RakNetSocket2_360_720.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B7056DA3F3446749838ECA3 /* RakNetSocket2_360_720.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		AAC4E5312B374019A694419F /* RakNetSocket2_Windows_Linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD5F25CCC4CC58F3F094E /* RakNetSocket2_Windows_Linux.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		AF4899311AB6C5BE00F9D574 /* RakNet_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cxx */; };
+		AF063FE41AF8D365009C7249 /* SimpleEncoding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF063FE21AF8D365009C7249 /* SimpleEncoding.cpp */; };
+		AF4899311AB6C5BE00F9D574 /* RakNet_wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cpp */; };
 		B0727BF9D75645049AF8C0AE /* LinuxStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBCC151399B34D838EE76D59 /* LinuxStrings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		B0E1E42DE5A843539F5C74EB /* CommandParserInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9E2B1DF4305403A974D124F /* CommandParserInterface.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		B75F6E9DAAD84613AAC70962 /* VariadicSQLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 995C444079424033923B6539 /* VariadicSQLParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
@@ -382,7 +383,9 @@
 		ADB76716FC0C402C996DFACE /* CloudServer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CloudServer.h; path = Source/CloudServer.h; sourceTree = SOURCE_ROOT; };
 		AE0C5ECA00764EBD8839D8AC /* DS_WeightedGraph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DS_WeightedGraph.h; path = Source/DS_WeightedGraph.h; sourceTree = SOURCE_ROOT; };
 		AEFAEBEA43C5409DBDB687BB /* DynDNS.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DynDNS.h; path = Source/DynDNS.h; sourceTree = SOURCE_ROOT; };
-		AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RakNet_wrap.cxx; path = DependentExtensions/Swig/SwigOutput/CplusDLLIncludes/RakNet_wrap.cxx; sourceTree = SOURCE_ROOT; };
+		AF063FE21AF8D365009C7249 /* SimpleEncoding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleEncoding.cpp; path = Source/SimpleEncoding.cpp; sourceTree = "<group>"; };
+		AF063FE31AF8D365009C7249 /* SimpleEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEncoding.h; path = Source/SimpleEncoding.h; sourceTree = "<group>"; };
+		AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RakNet_wrap.cpp; path = DependentExtensions/Swig/SwigOutput/CplusDLLIncludes/RakNet_wrap.cpp; sourceTree = SOURCE_ROOT; };
 		AF4899301AB6C5BE00F9D574 /* RakNet_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RakNet_wrap.h; path = DependentExtensions/Swig/SwigOutput/CplusDLLIncludes/RakNet_wrap.h; sourceTree = "<group>"; };
 		AFDD82DB4B3E44F880FA2F0E /* NatTypeDetectionServer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NatTypeDetectionServer.cpp; path = Source/NatTypeDetectionServer.cpp; sourceTree = SOURCE_ROOT; };
 		B16633BFDB364599BBC0A7E4 /* GridSectorizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GridSectorizer.cpp; path = Source/GridSectorizer.cpp; sourceTree = SOURCE_ROOT; };
@@ -469,6 +472,7 @@
 		4AAF5B556DE84D288135061C /* RakNetDLL */ = {
 			isa = PBXGroup;
 			children = (
+				AF063FE11AF8D312009C7249 /* Extentions */,
 				EA00ADB90F344C5CA0052756 /* Source Files */,
 				652F18D24DDF45BB94D2239E /* Header Files */,
 				5FB666AA1ED54BA894D0A681 /* CMakeLists.txt */,
@@ -677,10 +681,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AF063FE11AF8D312009C7249 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AF063FE21AF8D365009C7249 /* SimpleEncoding.cpp */,
+				AF063FE31AF8D365009C7249 /* SimpleEncoding.h */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
 		AF48992E1AB6C53300F9D574 /* Swig */ = {
 			isa = PBXGroup;
 			children = (
-				AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cxx */,
+				AF48992F1AB6C5BE00F9D574 /* RakNet_wrap.cpp */,
 				AF4899301AB6C5BE00F9D574 /* RakNet_wrap.h */,
 			);
 			name = Swig;
@@ -911,8 +924,9 @@
 				4375B324CDB74948AF82E034 /* BitStream.cpp in Sources */,
 				00FF222369E542B59FF75F9F /* CCRakNetSlidingWindow.cpp in Sources */,
 				961975A08C7B41BA97CAC7C5 /* CCRakNetUDT.cpp in Sources */,
+				AF063FE41AF8D365009C7249 /* SimpleEncoding.cpp in Sources */,
 				56D2567181914297965E7D9F /* CheckSum.cpp in Sources */,
-				AF4899311AB6C5BE00F9D574 /* RakNet_wrap.cxx in Sources */,
+				AF4899311AB6C5BE00F9D574 /* RakNet_wrap.cpp in Sources */,
 				247F065DD8D64EDDB1D4CB31 /* CloudClient.cpp in Sources */,
 				11028B9E486C48CCAFBF0606 /* CloudCommon.cpp in Sources */,
 				353F5CF9D311455BA58C9223 /* CloudServer.cpp in Sources */,

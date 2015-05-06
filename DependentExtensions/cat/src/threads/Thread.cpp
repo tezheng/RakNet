@@ -128,7 +128,7 @@ void Thread::AbortThread()
 
 #else
 
-	pthread_cancel(_thread);
+	pthread_exit(NULL);
 
 #endif
 

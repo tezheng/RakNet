@@ -14,9 +14,10 @@ RAKNET_FILES		:=	$(wildcard $(SOURCE_PATH)*.cpp)
 LOBBY_FILES			:=  $(wildcard $(MODULE_PATH)Lobby2/*.cpp)
 
 LOCAL_C_INCLUDES	:=	$(SOURCE_PATH)
+LOCAL_C_INCLUDES	+=	$(MODULE_PATH)
 
 # swig module
-LOCAL_SRC_FILES		:=  $(MODULE_PATH)/Swig/SwigOutput/CplusDLLIncludes/RakNet_wrap.cxx
+LOCAL_SRC_FILES		:=  $(MODULE_PATH)/Swig/SwigOutput/CplusDLLIncludes/RakNet_wrap.cpp
 
 # raknet module
 LOCAL_SRC_FILES		+=  $(RAKNET_FILES)

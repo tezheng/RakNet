@@ -11,6 +11,7 @@
 #define SWIGCSHARP
 #define SWIG_DIRECTORS
 
+#include "SimpleEncoding.h"
 
 #ifdef __cplusplus
 /* SwigValueWrapper is described in swig.swg */
@@ -3344,13 +3345,13 @@ SWIGEXPORT int SWIGSTDCALL PublicKey_publicKeyMode_get(void * jarg1) {
   return jresult;
 }
 
-
 SWIGEXPORT void SWIGSTDCALL PublicKey_remoteServerPublicKey_set(void * jarg1, char * jarg2) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *arg2 = (char *) 0 ;
   
-  arg1 = (RakNet::PublicKey *)jarg1; 
-  arg2 = (char *)jarg2; 
+  arg1 = (RakNet::PublicKey *)jarg1;
+  std::string key = UTF8toISO8859_1(jarg2);
+  arg2 = (char *)key.c_str();
   {
     if (arg1->remoteServerPublicKey) delete [] arg1->remoteServerPublicKey;
     if (arg2) {
